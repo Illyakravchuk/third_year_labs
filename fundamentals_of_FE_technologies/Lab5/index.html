@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Front-end, студент, персональні дані">
+    <meta name="description" content="Вебсторінка для 5 лабораторної роботи">
+    <title>Кравчук І.В. ІМ-13, лабораторна робота 5, варіант 3</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   
+    <form class="container-form">
+      <p class="titleForm">Форма для заповнення</p>
+  
+      <input placeholder="Прізвище І.П." type="text" class="name"><br>
+      <p class="name-hint hint">Формат: Прізвище І.П.</p>
+  
+      <input placeholder="Номер телефону" type="text" class="phone"><br>
+      <p class="phone-hint hint">Формат: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</p>
+  
+      <input placeholder="ID-карта" type="text" class="id-card"><br>
+      <p class="id-card-hint hint">Формат: ТТ №ЧЧЧЧЧЧ</p>
+  
+      <input placeholder="Факультет" type="text" class="faculty"><br>  
+      <p class="faculty-hint hint">Формат: ТТТТ</p>
+  
+      <input placeholder="Дата народження" type="text" class="date-of-birth"><br>
+      <p class="date-of-birth-hint hint">Формат: ЧЧ.ЧЧ.ЧЧЧЧ</p>
+  
+      <input type="button" value="Підтвердити" onclick="correctForm()">
+  </form>
+
+    <div class="line"></div>
+    
+    <div class="container-table">
+        <input type="color" class="colorPicker" value="#FFF065">
+        <table class="table"></table>
+    </div>
+        <script src="firstTask.js"></script>
+        <script src="secondTask.js"></script>
+  </body>
+</html>

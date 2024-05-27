@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  font-size: 22px;
+}
+
+.container-form {
+  font-family: Tahoma;
+  width: 480px;
+}
+
+.titleForm{
+  font-size: 45px;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+input {
+  font-size: 22px;
+  font-family: Tahoma;
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  padding: 4px;
+  margin-top: 19px;
+  border: 3px solid rgb(17, 114, 63);
+}
+
+.hint {
+  color: rgb(200, 6, 6);
+  display: none;
+}
+
+.hint.error {
+  display: inline;
+}
+
+.line {
+  height: auto;
+  border-left: 2px rgb(30, 9, 9) dashed;
+  transform: rotate(0deg);
+  margin: 0 120px;
+}
+.container-table  {
+  width: 480px;
+  height: 480px;
+  font-family: Tahoma;
+}
+
+.container-table  td {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.colorPicker {
+  margin-top: 50px;
+  width: 450px;
+  margin-bottom: 40px;
+}

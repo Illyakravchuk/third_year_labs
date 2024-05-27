@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Front-end, студент, таблиці">
+    <meta name="description" content="Вебсторінка для 2 лабораторної роботи">
+    <title>Кравчук І.В. ІМ-13, лабораторна робота 2, варіант 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 2px solid black;
+            font: 14px Verdana, sans-serif;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        tr:nth-child(1) {
+            background-color: #038f8f;
+            color: #000000;
+        }
+
+        
+        tr:nth-child(1):hover {
+            background-color: #f5f503;
+            color: #010FFF;
+        }
+
+        tr:nth-child(2) {
+            background-color: #f5f503;
+            color: #010FFF;
+        }
+
+        tr:nth-child(2):hover {
+            background-color: #038f8f;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="1" rowspan="2">Кравчук</td>
+            <td colspan="1">Ілля</td>        
+            <td colspan="2" rowspan="2">4</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1">Володимирович</td>
+        </tr>
+        <tr>
+            <td colspan="1">ІМ-13</td>
+            <td colspan="1">Лабораторна робота 2</td>
+            <td colspan="1">Варіант 3</td>
+            <td colspan="1">8</td>
+        </tr>
+        <tr>
+            <td colspan="1">9</td>
+            <td colspan="1">10</td>
+            <td colspan="2">11</td>
+        </tr>
+    </table>
+    <div class="figure-container">
+        <div class="square square1"></div>
+        <div class="square square2"></div>
+        <div class="square square3"></div>
+      </div>
+      <div class="figure-container-transform">
+        <div class="square square1"></div>
+        <div class="square square2"></div>
+        <div class="square square3"></div>
+      </div>
+</body>
+</html>

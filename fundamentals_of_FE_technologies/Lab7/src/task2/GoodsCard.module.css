@@ -1,0 +1,26 @@
+.card {
+    background-color: rgb(180, 151, 35);
+    width: 200px;
+    height: 255px;
+    margin: 20px;
+}
+
+.img {
+    margin: 10px 0 5px 0;
+    width: 180px;
+    height: 190px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.name h2 {
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Tahoma", serif;
+    margin: 0;
+}

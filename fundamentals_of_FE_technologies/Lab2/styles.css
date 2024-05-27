@@ -1,0 +1,39 @@
+.figure-container,
+.figure-container-transform {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.square {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #a8b7da;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.square1 {
+  transform: rotate(45deg);
+  top: 20px;
+  left: 50px;
+}
+
+.square2 {
+  transform: rotate(10deg);
+  top: 23px;
+  left: 12px;
+  background-color: #dad724;
+}
+
+.square3 {
+  transform: rotate(80deg);
+  top: -39px;
+  left: 88px;
+  background-color: #b03c6e;
+}
+
+

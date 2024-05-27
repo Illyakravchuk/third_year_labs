@@ -1,0 +1,52 @@
+body {
+  background-color: #666;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  font-family: Tahoma;
+  margin-bottom: 20px;
+}
+
+.container-user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.userInfo {
+  width: 300px;
+  height: auto;
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #3a3535;
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.userInfo img {
+  width: 100%;
+}
+
+.userInfo p {
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  box-shadow: 0px 0px 5px 5px #888888;
+  display: block;
+  border: none;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: #3a3535;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #1f1d1d;
+}

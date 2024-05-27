@@ -1,0 +1,49 @@
+    <title>Weather in {{ city }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+             text-align: center;
+        }
+        .container {
+            background-color: #3edae2; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px; 
+            max-width: 400px; 
+            width: 100%; 
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333333; 
+        }
+        p {
+            margin-bottom: 10px;
+            color: #090909; 
+        }
+        a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather in {{ city }}</h1>
+        <img src="{{ weatherData.weatherIconUrl }}" alt="Weather Image">
+        <p>Temperature: {{ weatherData.main.temp }}°C</p>
+        <p>Pressure: {{ weatherData.main.pressure }} hPa</p>
+        <p>Humidity: {{ weatherData.main.humidity }}%</p>
+    </div>
+

@@ -1,0 +1,28 @@
+type Firm {
+  id: ID!
+  companyName: String!
+  numberWorkers: Int!
+  contractName: String
+  startDate: String
+  endDate: String
+}
+
+type Query {
+  getFirmById(id: ID!): Firm
+  getAllFirms: [Firm!]
+}
+
+input NewFirm {
+  companyName: String
+  numberWorkers: Int
+  contractName: String
+  startDate: String
+  endDate: String
+}
+ 
+
+type Mutation {
+  addFirm(firm: NewFirm): [Firm!]!
+  updateFirm(id: ID!, body: NewFirm): Firm
+  deleteFirm(id: ID!): [Firm!]!
+}

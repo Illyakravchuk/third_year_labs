@@ -1,0 +1,32 @@
+<header>
+        <ul>
+                <li><a href="/">Головна сторінка</a></li>
+                <li><a href="/notes">Записи</a></li>
+                <li><a href="/add">Створити запис</a></li>
+        </ul>
+</header>
+<div class="container">
+    <form action="/add" method="post">
+        <div class="form-group">
+            <label for="companyName">Назва Компанії</label>
+            <input type="text" id="companyName" name="companyName">
+        </div>
+        <div class="form-group">
+            <label for="numberWorkers">Кількість працівників</label>
+            <input type="text" id="numberWorkers" name="numberWorkers" pattern="\d+" title="Please enter only numbers">
+        </div>
+        <div class="form-group">
+            <label for="contractName">Контракти</label>
+            <input type="text" id="contractName" name="contractName">
+        </div>
+        <div class="form-group">
+            <label for="startDate">Дата початку контракту</label>
+            <input type="text" id="startDate" name="startDate" pattern="\d{4}-\d{2}-\d{2}" title="Please enter date in YYYY-MM-DD format">
+        </div>
+        <div class="form-group">
+            <label for="endDate">Дата закінчення контракту</label>
+            <input type="text" id="endDate" name="endDate" pattern="\d{4}-\d{2}-\d{2}" title="Please enter date in YYYY-MM-DD format">
+        </div>
+        <button type="submit">Додати</button>
+    </form>
+</div>

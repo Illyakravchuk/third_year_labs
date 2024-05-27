@@ -1,0 +1,22 @@
+<header>
+        <ul>
+                <li><a href="/">Головна сторінка</a></li>
+                <li><a href="/notes">Записи</a></li>
+                <li><a href="/add">Створити запис</a></li>
+        </ul>
+</header>
+<div class="container">
+    <div class="notes-list">
+        {{#if notation.length}}
+        {{#each notation}}
+                <div class="notes">
+                <h2>Запис: {{_id}}</h2>
+                <a href="/notes/{{_id}}" class="edit-button">Редагувати</a>
+                <a href="/delete/{{_id}}" class="delete-button">Видалити</a>
+                </div>
+        {{/each}}
+        {{else}}
+            <h1>Записи відсутні!</h1>
+        {{/if}}
+    </div>
+</div>

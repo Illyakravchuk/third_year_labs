@@ -1,0 +1,34 @@
+<header>
+        <ul>
+                <li><a href="/">Головна сторінка</a></li>
+                <li><a href="/notes">Записи</a></li>
+                <li><a href="/add">Створити запис</a></li>
+        </ul>
+</header>
+<div class="container">
+    <form class="edit-form">
+        <input type="hidden" id="notationId" name="notationId" value="{{selectedNotation._id}}">
+        <div class="form-group">
+            <label for="companyName">Назва Компанії</label>
+            <input type="text" id="companyName" name="companyName" value="{{selectedNotation.companyName}}">
+        </div>
+        <div class="form-group">
+            <label for="numberWorkers">Кількість працівників</label>
+            <input type="text" id="numberWorkers" name="numberWorkers" pattern="\d+" title="Please enter only numbers" value="{{selectedNotation.numberWorkers}}">
+        </div>
+        <div class="form-group">
+            <label for="contractName">Контракти</label>
+            <input type="text" id="contractName" name="contractName" value="{{selectedNotation.contractName}}">
+        </div>
+        <div class="form-group">
+            <label for="startDate">Дата початку контракту</label>
+            <input type="text" id="startDate" name="startDate" pattern="\d{4}-\d{2}-\d{2}" title="Please enter date in YYYY-MM-DD format" value="{{dateToStr}}">
+        </div>
+        <div class="form-group">
+            <label for="endDate">Дата закінчення контракту</label>
+            <input type="text"id="endDate" name="endDate" pattern="\d{4}-\d{2}-\d{2}" title="Please enter date in YYYY-MM-DD format" value="{{dateToStr}}">
+        </div>
+        <button type="button">Застосувати зміни</button>
+        <a href="/notes/{{selectedNotation._id}}" class="back-button">Відхилити зміни</a>
+    </form>
+</div>

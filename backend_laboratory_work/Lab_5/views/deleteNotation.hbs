@@ -1,0 +1,19 @@
+<header>
+        <ul>
+                <li><a href="/">Головна сторінка</a></li>
+                <li><a href="/notes">Записи</a></li>
+                <li><a href="/add">Створити запис</a></li>
+        </ul>
+</header>
+<form action="/delete" method="post">
+  <div class="confirmation-container">
+    <div class="confirmation-message">
+      <h1>Ви точно хочете видалити запис з ID: {{notationId}}?</h1>
+      <div class="confirmation-buttons">
+        <input type="hidden" name="id" value="{{notationId}}">
+        <input type="button" value="Так">
+        <a href="/notes">Ні</a>
+      </div>
+    </div>
+  </div>
+</form>

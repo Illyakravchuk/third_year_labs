@@ -1,0 +1,19 @@
+<header>
+        <ul>
+                <li><a href="/">Головна сторінка</a></li>
+                <li><a href="/notes">Записи</a></li>
+                <li><a href="/add">Створити запис</a></li>
+        </ul>
+</header>
+<div class="container">
+   <div class="object-details">
+      <h1>Вміст запису</h1>
+        <p><strong>ID: </strong>{{selectedNotation._id}}</p>
+        <p><strong>Назва Компанії: </strong>{{selectedNotation.companyName}}</p>
+        <p><strong>Кількість працівників: </strong>{{selectedNotation.numberWorkers}}</p>
+        <p><strong>Контракти: </strong>{{selectedNotation.contractName}}</p>
+        <p><strong>Дата початку контракту: </strong>{{selectedNotation.startDate}}</p>
+        <p><strong>Дата закінчення контракту: </strong>{{selectedNotation.endDate}}</p>
+        <a href="/edit/{{selectedNotation._id}}" class="edit-button">Змінити</a>
+    </div>
+</div>

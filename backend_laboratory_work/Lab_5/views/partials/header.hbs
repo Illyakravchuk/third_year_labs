@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{#if isMain}}
+    <link rel="stylesheet" href="/index.css">
+  {{/if}}
+  {{#if isAdd}}
+    <link rel="stylesheet" href="/addNewNotation.css">
+  {{/if}}
+  {{#if isNotation}}
+    <link rel="stylesheet" href="/notes.css">
+  {{/if}}
+  {{#if isViewNotation}}
+    <link rel="stylesheet" href="/viewNotation.css">
+  {{/if}}
+  {{#if isEdit}}
+    <link rel="stylesheet" href="/editNotation.css">
+  {{/if}}
+  {{#if isDelete}}
+    <link rel="stylesheet" href="/deleteNotation.css">
+  {{/if}}
+</head>
